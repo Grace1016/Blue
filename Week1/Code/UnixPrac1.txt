@@ -1,0 +1,16 @@
+# practice for Introduction to UNIX and Linux --Fasta exercise 
+
+#1  Count the number of lines in each file. This command can count lines in every file ended with .fasta.
+    command: wc -l ../Data/fasta/*.fasta 
+     
+#2  Print everything starting from the second line for the E.coli genome.
+    command: tail -n +2 ../Data/fasta/E.coli.fasta 
+
+#3  Count the sequence length of the E.coli genome. The length means the number of nucleobases in a single DNA chain. 
+    command: tail -n +2 ../Data/fasta/E.coli.fasta | tr -d "\n" | wc -c
+    
+#4  Count the matches of a particular sequence, "ATGC" in the genome of E. coli.
+    command: tail -n +2 ../Data/fasta/E.coli.fasta | tr -d "\n" > ../Results/E.coil.txt && grep -o -i ATGC ../Results/E.coil.txt | wc -l
+    
+#5  Compute the AT/GC ratio. 
+    command:  echo "scale=3;($(grep -o 'A\|T' ../Data/fasta/E.coli.fasta | wc -l)/$(grep -o 'G\|C' ../Data/fasta/E.coli.fasta | wc -l))" |bc

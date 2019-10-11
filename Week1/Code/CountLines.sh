@@ -1,5 +1,4 @@
 #!/bin/bash
-
-NumLines=`wc -l < $1`
-echo "The file $1 has $NumLines lines"
-echo
+var=${1:-../Data/spawannxs.txt} # set a default value if $1 unset
+NumLines=`wc -l < $var`
+echo "The file $var has $NumLines lines"
