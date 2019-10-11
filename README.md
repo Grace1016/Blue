@@ -13,7 +13,7 @@ At your terminal, please run:
 
 ## Introduction
 
-Here's a brief introduction about my repository. There are seven directories named Week1-7 which  contain the codes, datas, sandbox and results for my weekly work. The .gitignore file helps to avoid submitting rubbish files. 
+Here's a brief introduction about my repository. There are seven directories named Week1-7 which  contain the codes, datas, sandbox and results from my weekly work. The .gitignore file helps to avoid submitting rubbish files. 
 
 
 ## Content
