@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+"""this script use list comprehension or loop to create sets """
+__author__='Hongye Wang (hw2419@ic.ac.uk)'
+
+
 ## Finds just those taxa that are oak trees from a list of species
 
 taxa = [ 'Quercus robur',

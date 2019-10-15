@@ -3,8 +3,8 @@
 """Some functions exemplifying the use of control statements"""
 #docstrings are considered part of the running code (normal comments are
 #stripped). Hence, you can access your docstrings at run time.
-__author__ = 'Wang Hongye (hw2419@ic.ac.uk)'
-__version__ = '0.0.1'
+__author__='Wang Hongye (hw2419@ic.ac.uk)'
+
 
 import sys
 

@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+""" some examples of loop """
+__author__='Hongye Wang (hw2419@ic.ac.uk)'
+
+
 # FOR loops in Python
 for i in range(5):
     print(i)

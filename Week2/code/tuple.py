@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+"""print tuples on a separate line"""
+__author__=' Hongye Wang (hw2419@ic.ac.uk) '
+__version__=' 0.0.1 '
+
 birds = ( ('Passerculus sandwichensis','Savannah sparrow',18.7),
           ('Delichon urbica','House martin',19),
           ('Junco phaeonotus','Yellow-eyed junco',19.5),
@@ -8,3 +13,6 @@ birds = ( ('Passerculus sandwichensis','Savannah sparrow',18.7),
 # Birds is a tuple of tuples of length three: latin name, common name, mass.
 # write a (short) script to print these on a separate line or output block by species 
 # Hints: use the "print" command! You can use list comprehensions!
+
+for tuple in birds:
+    print(tuple)  # print every tuple separately

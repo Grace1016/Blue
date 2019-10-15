@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+""" exercise of sys function and defining functions """
+__author__='Hongye Wang (hw2419@ic.ac.uk)'
+
 # What does each of foo_x do? 
 def foo_1(x):
     return x ** 0.5

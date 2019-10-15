@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+"""This is a script using two methods to find when the amount of rain in rainfall was greater than 100 and less than 50"""
+__author__=' Hongye Wang (hw2419@ic.ac.uk) '
+
+
 # Average UK Rainfall (mm) for 1910 by month
 # http://www.metoffice.gov.uk/climate/uk/datasets
 rainfall = (('JAN',111.4),
@@ -16,18 +21,28 @@ rainfall = (('JAN',111.4),
 
 # (1) Use a list comprehension to create a list of month,rainfall tuples where
 # the amount of rain was greater than 100 mm.
-greater_than_100 = set()
-for x in rainfall:
+greater_than_100 = [] # create a list for storing
+for x in rainfall: 
+    # store the month names and rainfall amount in the list
     if x[1] > 100:
-       greater_than_100.add(x)
+       greater_than_100.append(x)
 print("monthes where the amount of rain was greater than 100 mm :" ,greater_than_100)
+
+# using a list comprehension to sovle this problem
+greater_than_100 = [ tuple for tuple in rainfall if tuple[1]>100]
+print ("monthes where the amount of rain was greater than 100 mm :" ,greater_than_100)
  
 # (2) Use a list comprehension to create a list of just month names where the
 # amount of rain was less than 50 mm. 
-less_than_50 = []
-for name in rainfall:
+less_than_50 = [] #creat a list for storing
+for name in rainfall: 
+    # store the month names and rainfall amount in the list
     if name[1] < 50:
         less_than_50.append(name[0])
+print("mothe names where the amount of rain was less than 50 mm :", less_than_50)
+
+# using a list comprehension to sovle this problem
+less_than_50 = [ name[0] for name in rainfall if name[1]<50]
 print("mothe names where the amount of rain was less than 50 mm :", less_than_50)
 
 # (3) Now do (1) and (2) using conventional loops (you can choose to do 

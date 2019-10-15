@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+""" This is a script to match two sequences """
+__author__ = ' Hongye Wang (hw2419@ic.ac.uk) '
+
 # Two example sequences to match
 seq2 = "ATCGCCGGATTACGGG"
 seq1 = "CAATTCGGAT"

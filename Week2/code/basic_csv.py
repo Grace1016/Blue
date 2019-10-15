@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+""" basic command of reading and wirting csv files """
+__author__=' Hongye Wang (hw2419@ic.ac.uk) '
+
 import csv
 
 # Read a file containing:

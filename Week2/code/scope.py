@@ -1,5 +1,9 @@
-## Try this first
+#!/usr/bin/env python3
+""" this script helps us better understand the difference between global and local variable """
+__author__='Hongye Wang (hw2419@ic.ac.uk)'
 
+
+## Try this first
 _a_global = 10
 
 def a_function():

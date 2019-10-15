@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+""" exercise of using loop """
+__author__='Hongye Wang (hw2419@ic.ac.uk)'
+
 for j in range(12):
     if j % 3 == 0:
         print('hello')
