@@ -19,7 +19,8 @@ Here's a brief introduction about my repository. There are seven directories nam
 ## Content
 * Week1(linux and Unix)
 * Week2(PythonI)
-* ...to be continued
+* Week3(R and Data Management)
+* to be continue...
 
 
 
