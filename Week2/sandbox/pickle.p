@@ -1,0 +1,5 @@
+VCAATTCGGAT
+p0
+.V.......CAATTCGGAT
+p0
+.

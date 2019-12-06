@@ -18,9 +18,27 @@ Here's a brief introduction about my repository. There are seven directories nam
 
 ## Content
 * Week1(linux and Unix)
+    * basic unix/linux command learning
+    * how to write shell script, latex
 * Week2(PythonI)
+    * basic input and output, csv file
+    * Control flow, list comprehension, loops
+    * data types
+    * assign and manupilate variables
 * Week3(R and Data Management)
-* to be continue...
+    * Vectorization
+    * set.seed, random numbers
+    * debugging
+    * write R functuons
+    * visualization, ggplot
+* Week4-6(Statistics,GIS,Genomics)
+* Week7(PythonII,Jupyter)
+    * scipy and numpy
+    * regular expressions
+    * profiling
+    * draw networks
+    * subprocesses
+    * brief introduction about jupyter
 
 
 

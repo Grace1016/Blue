@@ -1,0 +1,2 @@
+Best_alignment: CAATTCGGAT
+Best_score: 5
