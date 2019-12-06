@@ -7,6 +7,7 @@ __author__='Hongye Wang (hw2419@ic.ac.uk)'
 _a_global = 10
 
 def a_function():
+    """ see the difference between global and local value """
     _a_global = 5
     _a_local = 4
     print("Inside the function, the value is ", _a_global)
@@ -23,6 +24,7 @@ print("Outside the function, the value is ", _a_global)
 _a_global = 10
 
 def a_function():
+    """ see if a global outside the function """
     global _a_global
     _a_global = 5
     _a_local = 4

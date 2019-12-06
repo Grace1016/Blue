@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """This is a script to lists if files and direcyories from home directory"""
 
-__author__ = ' Hongye Wang (hw2419@ic.ac.uk) '
+__author__ = 'Hongye Wang'
 
 # Use the subprocess.os module to get a list of files and  directories 
 # in your ubuntu home directory 

@@ -25,11 +25,14 @@ def stochrickvect(p0 = np.random.uniform(0.5,1.5,size=1000),r=1.2,K=1,sigma=0.2,
         N[yr,] = N[yr-1,]*np.exp(r*(1-N[yr-1,]/K)+np.random.normal(0,sigma,1))
     return(N)
 
-res2 = stochrickvect()
-a = time.time()
-res2 = stochrickvect()
-b = time.time()
-res2_time = b-a
+#compare the time 
+start_time = time.time()
+res1 = stochrick()
+stop_time = time.time()
+print("Loop takes: " + str(stop_time-start_time) + "s")
 
-print("Vectorized Stochastic Ricker takes:")
-print(res2_time)
+sta_t = time.time()
+res2 = stochrickvect()
+sto_t = time.time()
+print("Vectorized Stochastic Ricker takes: " + str(sto_t-sta_t) + "s")
+

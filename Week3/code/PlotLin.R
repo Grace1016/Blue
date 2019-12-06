@@ -31,7 +31,8 @@ p <- p + geom_text(aes(x = 60, y = 0,
                    parse = TRUE, size = 6, 
                    colour = "blue")
 
+#store into a pdf file
 pdf("../result/MyLinReg.pdf")
-p
+print(p)
 dev.off()
 

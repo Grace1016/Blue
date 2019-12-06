@@ -8,15 +8,15 @@ dim(MyDF)
 require(lattice)
 # create and save lattice plots
 pdf("../result/Pred_Lattice.pdf",11.7,8.3)
-densityplot(~log(Predator.mass) | Type.of.feeding.interaction, data = MyDF)
+print(densityplot(~log(Predator.mass) | Type.of.feeding.interaction, data = MyDF))
 dev.off()
 
 pdf("../result/Prey_Lattice.pdf",11.7,8.3)
-densityplot(~log(Prey.mass) | Type.of.feeding.interaction,data = MyDF)
+print(densityplot(~log(Prey.mass) | Type.of.feeding.interaction,data = MyDF))
 dev.off()
 
 pdf("../result/SizeRatio_Lattice.pdf",11.7,8.3)
-densityplot(~log(Prey.mass/Predator.mass) | Type.of.feeding.interaction, data = MyDF)
+print(densityplot(~log(Prey.mass/Predator.mass) | Type.of.feeding.interaction, data = MyDF))
 dev.off()
 
 # calculate and output the mean and median 

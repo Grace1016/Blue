@@ -1,4 +1,4 @@
-### using apply to define your own functions ###
+### using apply to operate a matrix ###
 
 SomeOperation <- function(v){ 
   if (sum(v) > 0){

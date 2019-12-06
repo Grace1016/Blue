@@ -10,7 +10,7 @@ mp <- ggplot() + mapWorld
 
 # layer the species on the world
 mp <- mp + geom_point(aes(x=gpdd$long,y=gpdd$lat),colour="yellow",size=3)
-mp
+print(mp)
 
 
 # most of the species are located at latitude 50 degrees north of the world.

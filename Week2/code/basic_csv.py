@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-""" basic command of reading and wirting csv files """
+""" basic script which includes some 
+    commands of reading and wirting csv files """
+    
 __author__=' Hongye Wang (hw2419@ic.ac.uk) '
 
 import csv

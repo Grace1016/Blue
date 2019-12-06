@@ -1,16 +1,19 @@
 # practice for Introduction to UNIX and Linux --Fasta exercise 
 
-#1  Count the number of lines in each file. This command can count lines in every file ended with .fasta.
-    command: wc -l ../Data/fasta/*.fasta 
+#1  Count the number of lines in each file. This command use 'wc -l' to count lines in every file ended with .fasta.
+    command: wc -l ../Data/fasta/*.fasta  # '-l' for counting lines
      
-#2  Print everything starting from the second line for the E.coli genome.
-    command: tail -n +2 ../Data/fasta/E.coli.fasta 
+#2  Print everything starting from the second line for the E.coli genome. Use 'tail' to see lines from +2 to end. Alternatively, using stream editor(SED) to search and print the fasta file is also good. While in the next three questions, I just used the first command.
+    command: tail -n +2 ../Data/fasta/E.coli.fasta  
+    Alternatively: sed -n '2,$p' ../Data/fasta/E.coli.fasta  # '$' represents the last line in the file
 
 #3  Count the sequence length of the E.coli genome. The length means the number of nucleobases in a single DNA chain. 
-    command: tail -n +2 ../Data/fasta/E.coli.fasta | tr -d "\n" | wc -c
+    command: tail -n +2 ../Data/fasta/E.coli.fasta | tr -d "\n" | wc -c  # First search the useful lines, and then use '|' to pass the outcome to next part of command,which delete the 'newline'. After that, the total length of sequence can be counted.
     
 #4  Count the matches of a particular sequence, "ATGC" in the genome of E. coli.
     command: tail -n +2 ../Data/fasta/E.coli.fasta | tr -d "\n" > ../Results/E.coil.txt && grep -o -i ATGC ../Results/E.coil.txt | wc -l
-    
+    # search the lines, pass it to next part for deleting the 'newline', then use '>' to store the useful data in a new file where I used 'grep' to extract each 'ATGC' and printed on the screen line by line. Finally, counted the lines
+
 #5  Compute the AT/GC ratio. 
     command:  echo "scale=3;($(grep -o 'A\|T' ../Data/fasta/E.coli.fasta | wc -l)/$(grep -o 'G\|C' ../Data/fasta/E.coli.fasta | wc -l))" |bc
+    # Grep 'A' and 'T' in the file to print on the screen then counts the lines. Similarly way to count 'G' and 'C'. Then use 'bc' to calculate the ratio. 'Scale=3' defines the number of digits after the decimal point in the expression.  

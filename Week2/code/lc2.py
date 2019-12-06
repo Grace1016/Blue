@@ -26,11 +26,13 @@ for x in rainfall:
     # store the month names and rainfall amount in the list
     if x[1] > 100:
        greater_than_100.append(x)
-print("monthes where the amount of rain was greater than 100 mm :" ,greater_than_100)
+print("Displaying the results")
+print("\nmonthes where the amount of rain was greater than 100 mm :" ,greater_than_100)
 
 # using a list comprehension to sovle this problem
 greater_than_100 = [ tuple for tuple in rainfall if tuple[1]>100]
-print ("monthes where the amount of rain was greater than 100 mm :" ,greater_than_100)
+print("Second method")
+print ("\nmonthes where the amount of rain was greater than 100 mm :" ,greater_than_100)
  
 # (2) Use a list comprehension to create a list of just month names where the
 # amount of rain was less than 50 mm. 
@@ -39,11 +41,13 @@ for name in rainfall:
     # store the month names and rainfall amount in the list
     if name[1] < 50:
         less_than_50.append(name[0])
-print("mothe names where the amount of rain was less than 50 mm :", less_than_50)
+print("\nDisplaying the results")
+print("\nmothe names where the amount of rain was less than 50 mm :", less_than_50)
 
 # using a list comprehension to sovle this problem
 less_than_50 = [ name[0] for name in rainfall if name[1]<50]
-print("mothe names where the amount of rain was less than 50 mm :", less_than_50)
+print("\nSecond method")
+print("\nmothe names where the amount of rain was less than 50 mm :", less_than_50)
 
 # (3) Now do (1) and (2) using conventional loops (you can choose to do 
 # this before 1 and 2 !). 

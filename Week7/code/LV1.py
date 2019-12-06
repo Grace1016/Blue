@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-__author__ = ' Hongye Wang (hw2419@ic.ac.uk) '
+__author__ = 'Hongye Wang (hw2419@ic.ac.uk)'
+
 
 import scipy as sc
 import scipy.integrate as integrate

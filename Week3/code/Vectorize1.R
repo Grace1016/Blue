@@ -1,6 +1,8 @@
+### an example of vectorization ###
+
 M <- matrix(runif(1000000),1000,1000)
 
-SumALLElements <- function(M){
+SumAllElements <- function(M){
   Dimensions <- dim(M)
   Tot <- 0
   for (i in 1:Dimensions[1]){
@@ -8,11 +10,11 @@ SumALLElements <- function(M){
       Tot <- Tot + M[i,j]
     }
   }
-  return(Tot)  
-  }
-  
-  ## This on my computer takes about 1 sec
-  print(system.time(SumALLElements(M)))
-  ## While this takes about 0.01 sec
-  print(system.time(sum(M)))
-  
+  return (Tot)
+}
+
+print("Using loops, the time taken is:")
+print(system.time(SumAllElements(M)))
+
+print("Using the in-built vectorized function, the time taken is:")
+print(system.time(sum(M)))

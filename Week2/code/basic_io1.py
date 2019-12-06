@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-""" a test script to skip blank lines in a file """
+""" a test script to print lines in the file 
+    and then skip blank lines to print in a file """
+
 __author__=' Hongye Wang (hw2419@ic.ac.uk) '
 
 #############################

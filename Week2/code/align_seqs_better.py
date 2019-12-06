@@ -2,6 +2,9 @@
 """Match two sequences and output all the best alignments"""
 __author__ = 'Hongye Wang (hw2419@ic.ac.uk)'
 
+import pickle
+
+# use two simple sequences as examples
 seq2 = "ATCGCCGGATTACGGG"
 seq1 = "CAATTCGGAT"
 
@@ -21,6 +24,7 @@ else:
 # A function that computes a score by returning the number of matches starting
 # from arbitrary startpoint (chosen by user)
 def calculate_score(s1, s2, l1, l2, startpoint):
+    """ match the two sequences from the startpoint, then store the matched score and matched pattern"""
     matched = "" # to hold string displaying alignements
     score = 0
     for i in range(l2):
@@ -46,23 +50,22 @@ def calculate_score(s1, s2, l1, l2, startpoint):
 # calculate_score(s1, s2, l1, l2, 5)
 
 # now try to find the best match (highest score) for the two sequences
-import pickle
 my_best_align = None
 my_best_score = -1
 best_align_num = 0 # count the number of best alignments
 
-f = open('../sandbox/num.p', 'wb') # storing all best alignments in a file 'num.p'
+f = open('../sandbox/pickle.p', 'wb') # storing all best alignments in a file 'pickle.p'
 for i in range(l1): 
     z = calculate_score(s1, s2, l1, l2, i)
     if z >= my_best_score:
         best_align_num += 1
-        my_best_align = "." * i + s2 # think about what this is doing!
+        my_best_align = "." * i + s2 # think about what this is doing!(second sequence showed from the startpoint)
         my_best_score = z 
         pickle.dump(my_best_align, f, 0)
 f.close()
 
 # output all the best results in All_best_Aligment.txt
-f = open('../sandbox/num.p','rb')
+f = open('../sandbox/pickle.p','rb')
 all_best_seq = open('../Results/All_best_Alignment.txt', 'w')
 
 for i in range(best_align_num):

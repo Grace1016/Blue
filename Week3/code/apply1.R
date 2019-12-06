@@ -1,5 +1,4 @@
-### the *apply family of functions ###
-## using applying the same function to rows/colums of a matrix using apply"
+### using apply to operate the same matrix by rows/colums ###
 ## Build a random matrix
 M <- matrix(rnorm(100), 10, 10)
 

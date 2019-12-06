@@ -2,7 +2,7 @@
 # Author: Hongye Wang (hw2419@ic.ac.uk)
 # Script: run_get_TreeHeight.sh
 # Desc: text get_TreeHeight.R, get_TreeHeight.py in unix
-# Arguments: none
+# Arguments: get_TreeHeight.R(py)
 # Date: Oct 2019
 
 # text get_TreeHeight.R

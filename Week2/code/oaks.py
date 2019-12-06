@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""this script use list comprehension or loop to create sets """
+"""this script use list comprehension or loop to create sets of taxa"""
+
 __author__='Hongye Wang (hw2419@ic.ac.uk)'
 
 
@@ -13,6 +14,7 @@ taxa = [ 'Quercus robur',
        ]
 
 def is_an_oak(name):
+    """ check if the name start with quercus and return a logic expression """
     return name.lower().startswith('quercus ')
 
 ##Using for loops

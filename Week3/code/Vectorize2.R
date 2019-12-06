@@ -18,6 +18,9 @@ stochrick<-function(p0=runif(1000,.5,1.5),r=1.2,K=1,sigma=0.2,numyears=100)
   return(N)
 }
 
+print("Stochastic Ricker takes:")
+print(system.time(res<-stochrick()))
+
 stochrickvect <- function(p0=runif(1000,.5,1.5),r=1.2,K=1,sigma=0.2,numyears=100)
 {
   #initialize

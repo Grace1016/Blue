@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""print tuples on a separate line"""
+"""print bird's latin name, common name and mass on separate lines"""
+
 __author__=' Hongye Wang (hw2419@ic.ac.uk) '
 __version__=' 0.0.1 '
 
@@ -14,5 +15,11 @@ birds = ( ('Passerculus sandwichensis','Savannah sparrow',18.7),
 # write a (short) script to print these on a separate line or output block by species 
 # Hints: use the "print" command! You can use list comprehensions!
 
+# use loop and adjust the format of output
 for tuple in birds:
-    print(tuple)  # print every tuple separately
+    print("latin name:",tuple[0])
+    print("common name:",tuple[1])
+    print("mass:",tuple[2])
+
+#use list comprehension
+[print(bird) for bird in birds]

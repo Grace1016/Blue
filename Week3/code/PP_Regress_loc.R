@@ -1,25 +1,35 @@
-rm(list = ls())
-# extract data
-MyDF <-read.csv("../data/EcolArchives-E089-51-D1.csv")
+### ggplot practicle for data visualisation ###
 
-# define a function to calculate slope,intercept,Rsquare,F-statistic value and p-value
-fc <- function(x,y) {
-  a <- lm(log(y)~log(x))
-  intercept = summary(a)$coefficients[1]
-  slope = summary(a)$coefficients[2]
-  Rsquare = summary(a)$r.squared[1]
-  f_statistic = summary(a)$fstatistic[1]
-  p_value = summary(a)$coefficients[8]
-  DF <- c(intercept,slope,Rsquare,f_statistic,p_value)
-  return(DF)
+# clear environment
+rm(list=ls())
+
+# Load required packages #
+require(ggplot2)
+require(dplyr)
+
+# load the data
+MyDF <- read.csv("../data/EcolArchives-E089-51-D1.csv", header = TRUE)
+
+# work out stats
+# define a function return the summary of lm as vector
+Myfun <- function(y,z) {
+  x <- lm(log(y)~log(z))
+  intercept = summary(x)$coefficients[1]
+  slope = summary(x)$coefficients[2]
+  r_sq = summary(x)$r.squared
+  p.value = summary(x)$coefficients[8]
+  f.statistic = summary(x)$fstatistic[1]
+  df <- c(slope, intercept, r_sq, f.statistic, p.value)
+  return(df)
 }
 
-# create a table
-Results <- MyDF %>% group_by(Type.of.feeding.interaction,Predator.lifestage,Location) %>%
-  summarise(regression_intercept = fc(Prey.mass,Predator.mass)[1],
-            regression_slope = fc(Prey.mass,Predator.mass)[2],
-            Rsquare = fc(Prey.mass,Predator.mass)[3],
-            f_value = fc(Prey.mass,Predator.mass)[4],
-            p_vlaue = fc(Prey.mass,Predator.mass)[5])
+# use dplyr group_by to output the results
+results <- MyDF %>% group_by(Type.of.feeding.interaction,Predator.lifestage, Location) %>%
+  summarise(Slop = Myfun(Predator.mass, Prey.mass)[1],
+            Intercept = Myfun(Predator.mass, Prey.mass)[2],
+            Rsquared = Myfun(Predator.mass, Prey.mass)[3],
+            Fvalue = Myfun(Predator.mass, Prey.mass)[4], 
+            Pvalue = Myfun(Predator.mass, Prey.mass)[5])
 
-write.csv(Results,"../result/PP_Regress_Loc.csv",row.names = FALSE)
+#write into a csv file in the results direction
+write.csv(results, "../result/PP_Regress_loc.csv", row.names = FALSE)

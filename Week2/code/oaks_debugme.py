@@ -21,15 +21,15 @@ def is_an_oak(name):
     False
     """
 
-    # match 'quercus'
+    # only match 'quercus' not 'quercuss'
     if re.match('^quercus\s', name, flags=re.I) !=None:
         return True
     else:
        return False
 
 
-""" main function to find the oak and list the species"""
 def main(argv): 
+    """ function to find the oak and list the species"""
     f = open('../data/TestOaksData.csv','r')
     g = open('../data/JustOaksData.csv','w')
     next(f) # add a header row

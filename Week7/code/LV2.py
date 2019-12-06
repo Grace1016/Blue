@@ -9,7 +9,7 @@ import matplotlib.pylab as p
 import sys
 
 def dCR_dt(pops, t=0):
-
+    """define the model"""
     R = pops[0]
     C = pops[1]
     dRdt = r * R * (1 - R/K) - a * R * C 

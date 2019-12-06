@@ -2,9 +2,15 @@
 """ This is a script to match two sequences """
 __author__ = ' Hongye Wang (hw2419@ic.ac.uk) '
 
-# Two example sequences to match
-seq2 = "ATCGCCGGATTACGGG"
-seq1 = "CAATTCGGAT"
+#read the data from sequence file
+lines = []
+f = open('../data/Sequences.txt','r')
+for line in f.readlines():
+    lines.append(line.strip('\n'))
+f.close()
+
+seq1 = lines[0]
+seq2 = lines[1]
 
 # Assign the longer sequence s1, and the shorter to s2
 # l1 is length of the longest, l2 that of the shortest
@@ -22,6 +28,7 @@ else:
 # A function that computes a score by returning the number of matches starting
 # from arbitrary startpoint (chosen by user)
 def calculate_score(s1, s2, l1, l2, startpoint):
+    """ match the two sequences from the startpoint, then store the matched score and matched pattern """
     matched = "" # to hold string displaying alignements
     score = 0
     for i in range(l2):
@@ -55,6 +62,11 @@ for i in range(l1): # Note that you just take the last alignment with the highes
     if z > my_best_score:
         my_best_align = "." * i + s2 # think about what this is doing!
         my_best_score = z 
-print(my_best_align)
-print(s1)
-print("Best score:", my_best_score)
+#print(my_best_align)
+#print(s1)
+#print("Best score:", my_best_score)
+
+#open a result .txt file and store the data into it
+g = open(r'../Results/best_alignment_result.txt','w')
+g.write("Best_alignment: " + my_best_align + '\n' + "Best_score: " + str(my_best_score))
+g.close()

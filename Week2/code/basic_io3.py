@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-""" a test script to input and output a dictionary """
+""" a test script using pickle package 
+    to store and load a dictionary """
 __author__=' Hongye Wang (hw2419@ic.ac.uk) '
 
 #############################

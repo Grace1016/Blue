@@ -6,7 +6,7 @@ import sys
 arg = sys.argv[1:]    # a list of filenames arguments
 
 # default sequences
-if arg == []:
+if len(arg) < 2:
     arg.append("../data/fasta/407228326.fasta")
     arg.append("../data/fasta/407228412.fasta")
 
@@ -46,6 +46,7 @@ else:
 # A function that computes a score by returning the number of matches starting
 # from arbitrary startpoint (chosen by user)
 def calculate_score(s1, s2, l1, l2, startpoint):
+    """ match the two sequences from the startpoint, then store the matched score and matched pattern """    
     matched = "" # to hold string displaying alignements
     score = 0
     for i in range(l2):
@@ -75,7 +76,7 @@ for i in range(l1): # Note that you just take the last alignment with the highes
         my_best_align = "." * i + s2 # think about what this is doing!
         my_best_score = z 
 
-f = open('../Results/fasta_alignment.txt','w')
+f = open('../Results/fasta_best_alignment.txt','w')
 f.write(my_best_align + '\n' + s1 + '\n' + "Best score:" + str(my_best_score))
 f.close()
 

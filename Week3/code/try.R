@@ -1,21 +1,26 @@
-### run a simulation that involves sampling from a population with try ###
+### showing the example of how 'try' doing ###
 
-x <- rnorm(50) #Generate your population
 doit <- function(x){
-  x <- sample(x, replace = TRUE)
-  if(length(unique(x)) > 30) {#only take mean if sample was sufficient
-    print(paste("Mean of this sample was:", as.character(mean(x))))
+  temp_x <- sample(x, replace = TRUE)
+  if(length(unique(temp_x)) > 30) {#only take mean if sample was sufficient
+    print(paste("Mean of this sample was:", as.character(mean(temp_x))))
   } 
   else {
-    stop("Couldn't calculate mean: too few unique points!")
+    stop("Couldn't calculate mean: too few unique values!")
   }
 }
 
-## Try using "try" with vectorization:
-result <- lapply(1:100, function(i) try(doit(x), FALSE))
+popn <- rnorm(50) #Generate your population
 
-## Or using a for loop:
-result <- vector("list", 100) #Preallocate/Initialize
-for(i in 1:100) {
-  result[[i]] <- try(doit(x), FALSE)
+#use lapply
+lapply(1:15, function(i) doit(popn))
+
+result <- lapply(1:15, function(i) try(doit(popn), FALSE))
+class(result)
+result
+
+# or using for loop
+result <- vector("list", 15) #Preallocate/Initialize
+for(i in 1:15) {
+  result[[i]] <- try(doit(popn), FALSE)
 }
