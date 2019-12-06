@@ -3,6 +3,9 @@
 # Week3 Coursework
 > This directory contains folders of code, data, results.
 
+# Language
+R 3.6 python3.6
+
 ## Code
 * apply1.R: using applying the same function to rows/colums of a matrix using apply.
 * apply2.R: using apply to define your own functions.

@@ -1,7 +1,10 @@
 ![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
 
-# Week8 Coursework
+# Week7 Coursework
 > This directory contains folders of code, data, results.
+
+# Language
+R 3.6 python3.6
 
 ## Code
 * blackbird.py : extract Kindoms,Phylums,and Species names from a file by using regex

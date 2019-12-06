@@ -3,7 +3,8 @@
 # Week1 Coursework
 > This directory contains folders of Code, Data, Results and Sandbox.
 
-## Configuration
+## Language
+bash latex git
 
 ### Code
 * UnixPrac1.txt: contains 5 commands for fasta exercise about the DNA sequence.

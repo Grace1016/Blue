@@ -3,6 +3,9 @@
 # Week2 Coursework
 > This directory contains folders of Code, Data, Results and Sandbox.
 
+# Language
+Python3.6
+
 ## Code
 * align_seqs.py: a script to match two sequences.
 * align_seqs_better.py: a script to match two sequences and output all the best alignments.
