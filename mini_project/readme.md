@@ -1,6 +1,6 @@
 # **CMEE Miniproject
 
-![code_cat](https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fmax%2F3600%2F0*n-2bW82Z6m6U2bij.jpeg&imgrefurl=https%3A%2F%2Fandy.coffee%2Fteach-your-cat-to-code-ca3cb20dd76f&tbnid=Sol-0Q2hGIogcM&vet=12ahUKEwjV9-qHu4joAhULcxoKHTiUCj8QMygBegUIARD2AQ..i&docid=iirz1QjLpnPWRM&w=1280&h=853&q=code%20cat&safe=strict&ved=2ahUKEwjV9-qHu4joAhULcxoKHTiUCj8QMygBegUIARD2AQ)
+![code_cat](https://images.app.goo.gl/bR2s1q5TagCfMn2r5)
 
 **Author:** Hongye Wang (hw2419@ic.ac.uk)
 
