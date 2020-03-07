@@ -1,6 +1,6 @@
 # **CMEE Miniproject
 
-![code_cat](https://images.app.goo.gl/bR2s1q5TagCfMn2r5)
+![image](https://user-images.githubusercontent.com/56070370/76150271-685a3e80-60a0-11ea-9b84-eb21395bbca1.png)
 
 **Author:** Hongye Wang (hw2419@ic.ac.uk)
 
