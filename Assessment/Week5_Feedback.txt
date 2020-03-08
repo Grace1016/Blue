@@ -1,0 +1,732 @@
+Starting weekly assessment for HongYe, Week5
+
+Current Points = 100
+
+Note that: 
+(1) Major sections begin with a double "====" line 
+(2) Subsections begin with a single "====" line 
+(3) Code output or text file content are printed within single "*****" lines 
+
+======================================================================
+======================================================================
+Your Git repo size this week is about 14.61 MiB on disk 
+
+PART 1: Checking project workflow...
+
+Found the following directories in parent directory: Week6, Week1, Week7, Assessment, Week5, Week2, Main_Project, .git, Week3, mini_project
+
+Found the following files in parent directory: .gitignore, README.md, .DS_Store
+
+Checking for key files in parent directory...
+
+Found .gitignore in parent directory, great! 
+
+Printing contents of .gitignore:
+**********************************************************************
+*~ 
+*.tmp
+
+
+
+# Created by https://www.gitignore.io/api/r,linux,python
+
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+### Python Patch ###
+.venv/
+
+### Python.VirtualEnv Stack ###
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
+pip-selfcheck.json
+
+### R ###
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+
+# Example code in package build process
+*-Ex.R
+
+# Output files from R CMD build
+/*.tar.gz
+
+# Output files from R CMD check
+/*.Rcheck/
+
+# RStudio files
+.Rproj.user/
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# knitr and R markdown default cache directories
+/*_cache/
+/cache/
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
+
+# Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
+rsconnect/
+
+### R.Bookdown Stack ###
+# R package: bookdown caching files
+/*_files/
+
+
+# End of https://www.gitignore.io/api/r,linux,python
+
+
+# Created by https://www.gitignore.io/api/latex
+
+### LaTeX ###
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+## Intermediate documents:
+*.dvi
+*.xdv
+*-converted-to.*
+# these rules might exclude image files for figures etc.
+# *.ps
+# *.eps
+# *.pdf
+
+## Generated if empty string is given at "Please type another file name for output:"
+.pdf
+
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+## Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+## Build tool directories for auxiliary files
+# latexrun
+latex.out/
+
+## Auxiliary and intermediate files from other packages:
+# algorithms
+*.alg
+*.loa
+
+# achemso
+acs-*.bib
+
+# amsthm
+*.thm
+
+# beamer
+*.nav
+*.pre
+*.snm
+*.vrb
+
+# changes
+*.soc
+
+# comment
+*.cut
+
+# cprotect
+*.cpt
+
+# elsarticle (documentclass of Elsevier journals)
+*.spl
+
+# endnotes
+*.ent
+
+# fixme
+*.lox
+
+# feynmf/feynmp
+*.mf
+*.mp
+*.t[1-9]
+*.t[1-9][0-9]
+*.tfm
+
+#(r)(e)ledmac/(r)(e)ledpar
+*.end
+*.?end
+*.[1-9]
+*.[1-9][0-9]
+*.[1-9][0-9][0-9]
+*.[1-9]R
+*.[1-9][0-9]R
+*.[1-9][0-9][0-9]R
+*.eledsec[1-9]
+*.eledsec[1-9]R
+*.eledsec[1-9][0-9]
+*.eledsec[1-9][0-9]R
+*.eledsec[1-9][0-9][0-9]
+*.eledsec[1-9][0-9][0-9]R
+
+# glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+
+# gnuplottex
+*-gnuplottex-*
+
+# gregoriotex
+*.gaux
+*.gtex
+
+# htlatex
+*.4ct
+*.4tc
+*.idv
+*.lg
+*.trc
+*.xref
+
+# hyperref
+*.brf
+
+# knitr
+*-concordance.tex
+# TODO Comment the next line if you want to keep your tikz graphics files
+*.tikz
+*-tikzDictionary
+
+# listings
+*.lol
+
+# makeidx
+*.idx
+*.ilg
+*.ind
+*.ist
+
+# minitoc
+*.maf
+*.mlf
+*.mlt
+*.mtc[0-9]*
+*.slf[0-9]*
+*.slt[0-9]*
+*.stc[0-9]*
+
+# minted
+_minted*
+*.pyg
+
+# morewrites
+*.mw
+
+# nomencl
+*.nlg
+*.nlo
+*.nls
+
+# pax
+*.pax
+
+# pdfpcnotes
+*.pdfpc
+
+# sagetex
+*.sagetex.sage
+*.sagetex.py
+*.sagetex.scmd
+
+# scrwfile
+*.wrt
+
+# sympy
+*.sout
+*.sympy
+sympy-plots-for-*.tex/
+
+# pdfcomment
+*.upa
+*.upb
+
+# pythontex
+*.pytxcode
+pythontex-files-*/
+
+# tcolorbox
+*.listing
+
+# thmtools
+*.loe
+
+# TikZ & PGF
+*.dpth
+*.md5
+*.auxlock
+
+# todonotes
+*.tdo
+
+# easy-todo
+*.lod
+
+# xcolor
+*.xcp
+
+# xmpincl
+*.xmpi
+
+# xindy
+*.xdy
+
+# xypic precompiled matrices
+*.xyc
+
+# endfloat
+*.ttt
+*.fff
+
+# Latexian
+TSWLatexianTemp*
+
+## Editors:
+# WinEdt
+*.bak
+*.sav
+
+# Texpad
+.texpadtmp
+
+# LyX
+*.lyx~
+
+# Kile
+*.backup
+
+# KBibTeX
+*~[0-9]*
+
+# auto folder when using emacs and auctex
+./auto/*
+*.el
+
+# expex forward references with \gathertags
+*-tags.tex
+
+# standalone packages
+*.sta
+
+### LaTeX Patch ###
+# glossaries
+*.glstex
+
+
+# End of https://www.gitignore.io/api/latex
+**********************************************************************
+
+Found README in parent directory, named: README.md
+
+Printing contents of README.md:
+**********************************************************************
+![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
+
+# MY CMEE 2019-2020 COURSEWORK REPOSITORY
+> A place to submit my CMEE coursework from week1 to week7.
+
+
+## Getting started
+
+Hello~ Wellcome to my repository!
+At your terminal, please run:
+* git clone https://github.com/Grace1016/CMEECourseWork.git
+
+
+## Introduction
+
+Here's a brief introduction about my repository. There are seven directories named Week1-7 which  contain the codes, datas, sandbox and results from my weekly work. The .gitignore file helps to avoid submitting rubbish files. 
+
+
+## Content
+* Week1(linux and Unix)
+    * basic unix/linux command learning
+    * how to write shell script, latex
+* Week2(PythonI)
+    * basic input and output, csv file
+    * Control flow, list comprehension, loops
+    * data types
+    * assign and manupilate variables
+* Week3(R and Data Management)
+    * Vectorization
+    * set.seed, random numbers
+    * debugging
+    * write R functuons
+    * visualization, ggplot
+* Week4-6(Statistics,GIS,Genomics)
+* Week7(PythonII,Jupyter)
+    * scipy and numpy
+    * regular expressions
+    * profiling
+    * draw networks
+    * subprocesses
+    * brief introduction about jupyter
+
+
+
+**********************************************************************
+
+======================================================================
+Looking for the weekly directories...
+
+Found 6 weekly directories: Week1, Week2, Week3, Week5, Week6, Week7
+
+The Week5 directory will be assessed 
+
+======================================================================
+======================================================================
+PART 2: Checking weekly code and workflow...
+
+======================================================================
+Assessing WEEK5...
+
+Found the following directories: code, data
+
+Found the following files: .DS_Store
+
+Checking for readme file in weekly directory...
+
+README file missing, 1 pt deducted
+
+Current Points = 99
+
+Results directory missing!
+
+Creating Results directory...
+
+Found 1 code files: polygone_map.R
+
+======================================================================
+Testing script/code files...
+
+======================================================================
+Inspecting script file polygone_map.R...
+
+File contents are:
+**********************************************************************
+### create a population density map for the British Isles ###
+pop_dens <- data.frame(n_km2 = c(260, 67,151, 4500, 133), 
+                       country = c('England','Scotland', 'Wales', 'London', 'Northern Ireland'))
+print(pop_dens)
+
+# Create coordinates  for each country 
+# -  this is a list of sets of coordinates forming the edge of the polygon. 
+# - note that they have to _close_ (have the same coordinate at either end)
+scotland <- rbind(c(-5, 58.6), c(-3, 58.6), c(-4, 57.6), 
+                  c(-1.5, 57.6), c(-2, 55.8), c(-3, 55), 
+                  c(-5, 55), c(-6, 56), c(-5, 58.6))
+england <- rbind(c(-2,55.8),c(0.5, 52.8), c(1.6, 52.8), 
+                 c(0.7, 50.7), c(-5.7,50), c(-2.7, 51.5), 
+                 c(-3, 53.4),c(-3, 55), c(-2,55.8))
+wales <- rbind(c(-2.5, 51.3), c(-5.3,51.8), c(-4.5, 53.4),
+               c(-2.8, 53.4),  c(-2.5, 51.3))
+ireland <- rbind(c(-10,51.5), c(-10, 54.2), c(-7.5, 55.3),
+                 c(-5.9, 55.3), c(-5.9, 52.2), c(-10,51.5))
+
+# Convert these coordinates into feature geometries
+# - these are simple coordinate sets with no projection information
+scotland <- st_polygon(list(scotland))
+england <- st_polygon(list(england))
+wales <- st_polygon(list(wales))
+ireland <- st_polygon(list(ireland))
+
+# Combine geometries into a simple feature column
+uk_eire <- st_sfc(wales, england, scotland, ireland, crs=4326)
+plot(uk_eire, asp=1)
+uk_eire_capitals <- data.frame(long= c(-0.1, -3.2, -3.2, -6.0, -6.25),
+                               lat=c(51.5, 51.5, 55.8, 54.6, 53.30),
+                               name=c('London', 'Cardiff', 'Edinburgh', 'Belfast', 'Dublin'))
+
+uk_eire_capitals <- st_as_sf(uk_eire_capitals, coords=c('long','lat'), crs=4326)
+
+#use the buffer operation to create a polygon for London
+#which we define as anywhere within a quarter degree of St. Pauls Cathedral
+st_pauls <- st_point(x=c(-0.098056, 51.513611))
+london <- st_buffer(st_pauls, 0.25)
+#remove London from the England polygon
+england_no_london <- st_difference(england, london)
+# Count the points and show the number of rings within the polygon features
+lengths(scotland)
+length(england_no_london)
+#tidy up wales#
+wales <- st_difference(wales, england)
+
+# A rough polygon that includes Northern Ireland and surrounding sea.
+# - not the alternative way of providing the coordinates
+ni_area <- st_polygon(list(cbind(x=c(-8.1, -6, -5, -6, -8.1), y=c(54.4, 56, 55, 54, 54.4))))
+
+northern_ireland <- st_intersection(ireland, ni_area)
+eire <- st_difference(ireland, ni_area)
+
+# Combine the final geometries
+uk_eire <- st_sfc(wales, england_no_london, scotland, london, northern_ireland, eire, crs=4326)
+plot(uk_eire,asp=1)
+#make the UK into a single feature
+uk_country <- st_union(uk_eire[-6])
+# compare six Polygon features with one Multipolygon feature
+print(uk_eire)
+print(uk_country)
+par(mfrow=c(1, 2), mar=c(3,3,1,1))
+#plot them
+plot(uk_eire, asp=1, col=rainbow(6))
+plot(st_geometry(uk_eire_capitals), add=TRUE)
+plot(uk_country, asp=1, col='lightblue')
+
+uk_eire <- st_sf(name=c('Wales', 'England','Scotland', 'London', 
+                        'Northern Ireland', 'Eire'),
+                 geometry=uk_eire)
+
+plot(uk_eire, asp=1)
+uk_eire$capital <- c('Cardiff','London','Edinburgh', NA, 'Belfast','Dublin')
+uk_eire <- merge(uk_eire, pop_dens, by.x='name', by.y='country', all.x=TRUE)
+print(uk_eire)
+#spatial attributes
+uk_eire_centroids <- st_centroid(uk_eire)
+st_coordinates(uk_eire_centroids)
+uk_eire$area <- st_area(uk_eire)
+# The length of a polygon is the perimeter length 
+#- note that this includes the length of internal holes.
+uk_eire$length <- st_length(uk_eire)
+# Look at the result
+print(uk_eire)
+# You can change units in a neat way
+uk_eire$area <- set_units(uk_eire$area, 'km^2')
+uk_eire$length <- set_units(uk_eire$length, 'km')
+uk_eire$length <- as.numeric(uk_eire$length)
+print(uk_eire)
+
+#show our map of population density
+plot(uk_eire['n_km2'], asp=1)
+
+# British National Grid (EPSG:27700)
+uk_eire_BNG <- st_transform(uk_eire, 27700)
+# The bounding box of the data shows the change in units
+st_bbox(uk_eire)
+##  xmin  ymin  xmax  ymax 
+## -10.0  50.0   1.6  58.6
+
+st_bbox(uk_eire_BNG)
+##       xmin       ymin       xmax       ymax 
+## -154811.97   17655.72  642773.71  971900.65
+
+# UTM50N (EPSG:32650)
+uk_eire_UTM50N <- st_transform(uk_eire, 32650)
+# Plot the results
+par(mfrow=c(1, 3), mar=c(3,3,1,1))
+plot(st_geometry(uk_eire), asp=1, axes=TRUE, main='WGS 84')
+plot(st_geometry(uk_eire_BNG), axes=TRUE, main='OSGB 1936 / BNG')
+plot(st_geometry(uk_eire_UTM50N), axes=TRUE, main='UTM 50N')
+
+# Set up some points separated by 1 degree latitude and longitude from St. Pauls
+st_pauls <- st_sfc(st_pauls, crs=4326)
+one_deg_west_pt <- st_sfc(st_pauls - c(1, 0), crs=4326) # near Goring
+one_deg_north_pt <-  st_sfc(st_pauls + c(0, 1), crs=4326) # near Peterborough
+# Calculate the distance between St Pauls and each point
+st_distance(st_pauls, one_deg_west_pt)
+st_distance(st_pauls, one_deg_north_pt)
+st_distance(st_transform(st_pauls, 27700), st_transform(one_deg_west_pt, 27700))
+**********************************************************************
+
+Testing polygone_map.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+  n_km2          country
+1   260          England
+2    67         Scotland
+3   151            Wales
+4  4500           London
+5   133 Northern Ireland
+
+**********************************************************************
+
+Encountered error (or warning):
+Error in st_polygon(list(scotland)) : 
+  could not find function "st_polygon"
+Execution halted
+
+======================================================================
+======================================================================
+Finished running scripts
+
+Ran into 1 errors
+
+======================================================================
+======================================================================
+
+FINISHED WEEKLY ASSESSMENT
+
+Current Points for the Week = 99
+
+NOTE THAT THESE ARE POINTS, NOT MARKS FOR THE WEEK!

@@ -9,13 +9,13 @@ Note that:
 
 ======================================================================
 ======================================================================
-Your Git repo size this week is about 1.57 MiB on disk 
+Your Git repo size this week is about 14.61 MiB on disk 
 
 PART 1: Checking project workflow...
 
-Found the following directories in parent directory: Week1, Assessment, Week2, .git
+Found the following directories in parent directory: Week6, Week1, Week7, Assessment, Week5, Week2, Main_Project, .git, Week3, mini_project
 
-Found the following files in parent directory: .gitignore, README.md
+Found the following files in parent directory: .gitignore, README.md, .DS_Store
 
 Checking for key files in parent directory...
 
@@ -25,6 +25,8 @@ Printing contents of .gitignore:
 **********************************************************************
 *~ 
 *.tmp
+
+
 
 # Created by https://www.gitignore.io/api/r,linux,python
 
@@ -508,8 +510,27 @@ Here's a brief introduction about my repository. There are seven directories nam
 
 ## Content
 * Week1(linux and Unix)
+    * basic unix/linux command learning
+    * how to write shell script, latex
 * Week2(PythonI)
-* ...to be continued
+    * basic input and output, csv file
+    * Control flow, list comprehension, loops
+    * data types
+    * assign and manupilate variables
+* Week3(R and Data Management)
+    * Vectorization
+    * set.seed, random numbers
+    * debugging
+    * write R functuons
+    * visualization, ggplot
+* Week4-6(Statistics,GIS,Genomics)
+* Week7(PythonII,Jupyter)
+    * scipy and numpy
+    * regular expressions
+    * profiling
+    * draw networks
+    * subprocesses
+    * brief introduction about jupyter
 
 
 
@@ -518,7 +539,7 @@ Here's a brief introduction about my repository. There are seven directories nam
 ======================================================================
 Looking for the weekly directories...
 
-Found 2 weekly directories: Week1, Week2
+Found 6 weekly directories: Week1, Week2, Week3, Week5, Week6, Week7
 
 The Week1 directory will be assessed 
 
@@ -531,7 +552,7 @@ Assessing WEEK1...
 
 Found the following directories: Code, Data, Sandbox, Results
 
-Found the following files: README.md
+Found the following files: README.md, .DS_Store
 
 Checking for readme file in weekly directory...
 
@@ -544,7 +565,8 @@ Printing contents of README.md:
 # Week1 Coursework
 > This directory contains folders of Code, Data, Results and Sandbox.
 
-## Configuration
+## Language
+bash latex git
 
 ### Code
 * UnixPrac1.txt: contains 5 commands for fasta exercise about the DNA sequence.
@@ -578,9 +600,10 @@ Printing contents of README.md:
 * ListRootDir.txt: containing the whole files names in root so that we can usde 'wc -l' to count how many files in root.
 * test.txt: created by the test of 'redirection' and then be used to test the scrip 'tabtocsv.sh'.**********************************************************************
 
-Found following files in results directory: images.jpg...
+Found following files in results directory: .csv.csv, File1.csv.csv, images.jpg, 1800.csv.txt...
+ideally, Results directory should be empty other than, perhaps, a readme. 
 
-Found 11 code files: CountLines.sh,  ConcatenateTwoFiles.sh, variables.sh, tiff2png.sh, csvtospace.sh, FirstExample.tex, MyExampleScript.sh, FirstBiblio.bib, UnixPrac1.txt, tabtocsv.sh, boilerplate.sh
+Found 11 code files: ConcatenateTwoFiles.sh, CountLines.sh, variables.sh, tiff2png.sh, csvtospace.sh, FirstExample.tex, MyExampleScript.sh, FirstBiblio.bib, UnixPrac1.txt, tabtocsv.sh, boilerplate.sh
 
 Found the following extra files: CompileLaTeX.sh 
 0.5 pt deducted per extra file
@@ -591,12 +614,40 @@ Current Points = 99.5
 Testing script/code files...
 
 ======================================================================
+Inspecting script file ConcatenateTwoFiles.sh...
+
+File contents are:
+**********************************************************************
+#!/bin/bash
+if [ $# -ne 3 ]; then # return an error message if the inputs are not correct
+    echo "variables is not set completely"
+else
+    cat $1 > $3
+    cat $2 >> $3
+    echo "Merged File is"
+    cat $3
+fi**********************************************************************
+
+Testing ConcatenateTwoFiles.sh...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+variables is not set completely
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.00311s
+
+======================================================================
 Inspecting script file CountLines.sh...
 
 File contents are:
 **********************************************************************
 #!/bin/bash
-var=${1:-../Data/spawannxs.txt} # set a default value if $1 unset
+var=${1:-../Data/spawannxs.txt} # set a default value if $1 unset in command line
 NumLines=`wc -l < $var`
 echo "The file $var has $NumLines lines"**********************************************************************
 
@@ -611,33 +662,7 @@ The file ../Data/spawannxs.txt has 597 lines
 
 Code ran without errors
 
-Time consumed = 0.00461s
-
-======================================================================
-Inspecting script file  ConcatenateTwoFiles.sh...
-
-File contents are:
-**********************************************************************
-#!/bin/bash
-if [ -z "$1"]; then
-    echo "variable is not set"
-else
-    cat $1 > $3
-    cat $2 >> $3
-    echo "Merged File is"
-    cat $3
-fi**********************************************************************
-
-Testing  ConcatenateTwoFiles.sh...
-
-Output (only first 500 characters): 
-
-**********************************************************************
-
-**********************************************************************
-
-Encountered error (or warning):
-bash: ConcatenateTwoFiles.sh: No such file or directory
+Time consumed = 0.00721s
 
 ======================================================================
 Inspecting script file variables.sh...
@@ -691,7 +716,7 @@ Converting ../Data/images.tif
 
 Code ran without errors
 
-Time consumed = 0.01232s
+Time consumed = 0.03353s
 
 ======================================================================
 Inspecting script file csvtospace.sh...
@@ -704,12 +729,12 @@ File contents are:
 # Desc: shell script that takes a comma separated values and converts it to a space separated values file. However, it must not change the input file 
 # Arguments: 1-> tab delimited file
 # Date: 1st Oct 2018
-if [ -z "$1"]; then
-    echo "variable is not set"
+if [ -z "$1" ]; then
+    echo "variable is not set, test file could be found in Data/Temperatures"
 else
     echo "creating a space delimited version of $1  "
-    cat $1 | tr -s "," " " >> $1.csv
-    mv $1.csv ../Results
+    cat $1 | tr -s "," " " >> $1.txt
+    mv $1.txt ../Results
     echo -e "\nDone!"
     exit
 fi**********************************************************************
@@ -719,13 +744,13 @@ Testing csvtospace.sh...
 Output (only first 500 characters): 
 
 **********************************************************************
-variable is not set
+variable is not set, test file could be found in Data/Temperatures
 
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 0.00297s
+Time consumed = 0.00296s
 
 ======================================================================
 Inspecting script file FirstExample.tex...
@@ -786,7 +811,7 @@ Hello mhasoba
 
 Code ran without errors
 
-Time consumed = 0.00239s
+Time consumed = 0.00339s
 
 ======================================================================
 Inspecting script file FirstBiblio.bib...
@@ -811,21 +836,23 @@ File contents are:
 **********************************************************************
 # practice for Introduction to UNIX and Linux --Fasta exercise 
 
-#1  Count the number of lines in each file. This command can count lines in every file ended with .fasta.
-    command: wc -l ../Data/fasta/*.fasta 
+#1  Count the number of lines in each file. This command use 'wc -l' to count lines in every file ended with .fasta.
+    command: wc -l ../Data/fasta/*.fasta  # '-l' for counting lines
      
-#2  Print everything starting from the second line for the E.coli genome.
-    command: tail -n +2 ../Data/fasta/E.coli.fasta 
+#2  Print everything starting from the second line for the E.coli genome. Use 'tail' to see lines from +2 to end. Alternatively, using stream editor(SED) to search and print the fasta file is also good. While in the next three questions, I just used the first command.
+    command: tail -n +2 ../Data/fasta/E.coli.fasta  
+    Alternatively: sed -n '2,$p' ../Data/fasta/E.coli.fasta  # '$' represents the last line in the file
 
 #3  Count the sequence length of the E.coli genome. The length means the number of nucleobases in a single DNA chain. 
-    command: tail -n +2 ../Data/fasta/E.coli.fasta | tr -d "\n" | wc -c
+    command: tail -n +2 ../Data/fasta/E.coli.fasta | tr -d "\n" | wc -c  # First search the useful lines, and then use '|' to pass the outcome to next part of command,which delete the 'newline'. After that, the total length of sequence can be counted.
     
 #4  Count the matches of a particular sequence, "ATGC" in the genome of E. coli.
     command: tail -n +2 ../Data/fasta/E.coli.fasta | tr -d "\n" > ../Results/E.coil.txt && grep -o -i ATGC ../Results/E.coil.txt | wc -l
-    
+    # search the lines, pass it to next part for deleting the 'newline', then use '>' to store the useful data in a new file where I used 'grep' to extract each 'ATGC' and printed on the screen line by line. Finally, counted the lines
+
 #5  Compute the AT/GC ratio. 
     command:  echo "scale=3;($(grep -o 'A\|T' ../Data/fasta/E.coli.fasta | wc -l)/$(grep -o 'G\|C' ../Data/fasta/E.coli.fasta | wc -l))" |bc
-**********************************************************************
+    # Grep 'A' and 'T' in the file to print on the screen then counts the lines. Similarly way to count 'G' and 'C'. Then use 'bc' to calculate the ratio. 'Scale=3' defines the number of digits after the decimal point in the expression.  **********************************************************************
 
 Testing UnixPrac1.txt...
 
@@ -893,13 +920,13 @@ This is a shell script!
 
 Code ran without errors
 
-Time consumed = 0.00929s
+Time consumed = 0.00263s
 
 ======================================================================
 ======================================================================
 Finished running scripts
 
-Ran into 3 errors
+Ran into 2 errors
 
 ======================================================================
 ======================================================================

@@ -9,11 +9,11 @@ Note that:
 
 ======================================================================
 ======================================================================
-Your Git repo size this week is about 1.57 MiB on disk 
+Your Git repo size this week is about 14.61 MiB on disk 
 
 PART 1: Checking project workflow...
 
-Found the following directories in parent directory: Week6, Week1, Week7, Assessment, Week5, Week2, .git, Week3
+Found the following directories in parent directory: Week6, Week1, Week7, Assessment, Week5, Week2, Main_Project, .git, Week3, mini_project
 
 Found the following files in parent directory: .gitignore, README.md, .DS_Store
 
@@ -25,6 +25,8 @@ Printing contents of .gitignore:
 **********************************************************************
 *~ 
 *.tmp
+
+
 
 # Created by https://www.gitignore.io/api/r,linux,python
 
@@ -508,9 +510,27 @@ Here's a brief introduction about my repository. There are seven directories nam
 
 ## Content
 * Week1(linux and Unix)
+    * basic unix/linux command learning
+    * how to write shell script, latex
 * Week2(PythonI)
+    * basic input and output, csv file
+    * Control flow, list comprehension, loops
+    * data types
+    * assign and manupilate variables
 * Week3(R and Data Management)
-* to be continue...
+    * Vectorization
+    * set.seed, random numbers
+    * debugging
+    * write R functuons
+    * visualization, ggplot
+* Week4-6(Statistics,GIS,Genomics)
+* Week7(PythonII,Jupyter)
+    * scipy and numpy
+    * regular expressions
+    * profiling
+    * draw networks
+    * subprocesses
+    * brief introduction about jupyter
 
 
 
@@ -542,8 +562,11 @@ Printing contents of README.md:
 **********************************************************************
 ![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
 
-# Week8 Coursework
+# Week7 Coursework
 > This directory contains folders of code, data, results.
+
+# Language
+R 3.6 python3.6
 
 ## Code
 * blackbird.py : extract Kindoms,Phylums,and Species names from a file by using regex
@@ -568,10 +591,15 @@ Printing contents of README.md:
 * A folder where some final results will be outputed in.
 * Has been cleaned up!**********************************************************************
 
-Found following files in results directory: LV3_model2.pdf, TestR.Rout, fmr_plot.pdf, LV2_model2.pdf, FW_Network.pdf, QMEE_py.svg, LV4_model1.pdf, TestR_errFile.Rout, QMEENet.svg, LV4_model2.pdf, LV2_model1.pdf, LV3_model1.pdf, .DS_Store...
+Found following files in results directory: LV3_model2.pdf, TestR.Rout, LV1_model.pdf, fmr_plot.pdf, LV2_model2.pdf, FW_Network.pdf, TestR_errFile.Rout, LV2_model1.pdf, LV3_model1.pdf, QMEENetpy.svg, .DS_Store...
 ideally, Results directory should be empty other than, perhaps, a readme. 
 
-Found 19 code files: TestR.py, regexs.py, LV3.py, LV model.py, profileme2.py, timeitme.py, blackbirds.py, Nets.py, profileme.py, LV4.py, fmr.R, using_os.py, LV1.py, DrawFW.py, re4.py, Nets.R, run_fmr_R.py, run_LV.py, LV2.py
+Found 21 code files: TestR.py, regexs.py, LV3.py, LV model.py, profileme2.py, timeitme.py, blackbirds.py, Nets.py, TestR.R, profileme.py, LV4.py, fmr.R, using_os.py, LV1.py, MyFirstJupyterNB.ipynb, DrawFW.py, re4.py, Nets.R, run_fmr_R.py, run_LV.py, LV2.py
+
+Found the following extra files: .DS_Store
+0.5 pt deducted per extra file
+
+Current Points = 99.5
 
 ======================================================================
 Testing script/code files...
@@ -598,7 +626,7 @@ checking for docstrings...
 
 Found no functions, but one docstring for the script, good
 
-Current Points = 100
+Current Points = 99.5
 
 Output (only first 500 characters): 
 
@@ -608,7 +636,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.07041s
+Time consumed = 0.16195s
 
 ======================================================================
 Inspecting script file regexs.py...
@@ -672,7 +700,7 @@ checking for docstrings...
 
 Found no functions, but one docstring for the script, good
 
-Current Points = 100
+Current Points = 99.5
 
 Output (only first 500 characters): 
 
@@ -781,7 +809,7 @@ Found one or more docstrings and functions
 
 Missing docstring, either in one or functions and/or at the script level
 
-Current Points = 99.5
+Current Points = 99.0
 
 Output (only first 500 characters): 
 
@@ -808,7 +836,7 @@ the final population values is:
 
 Code ran without errors
 
-Time consumed = 0.77322s
+Time consumed = 1.05146s
 
 ======================================================================
 Inspecting script file LV model.py...
@@ -858,7 +886,7 @@ checking for docstrings...
 Found one or more functions, but completely missing docstrings
 2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
 
-Current Points = 97.0
+Current Points = 96.5
 
 Output (only first 500 characters): 
 
@@ -907,7 +935,7 @@ Found one or more docstrings and functions
 
 Missing docstring, either in one or functions and/or at the script level
 
-Current Points = 95.5
+Current Points = 95.0
 
 Output (only first 500 characters): 
 
@@ -918,7 +946,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 3.73630s
+Time consumed = 4.50281s
 
 ======================================================================
 Inspecting script file timeitme.py...
@@ -985,7 +1013,7 @@ checking for docstrings...
 
 Found no functions, but one docstring for the script, good
 
-Current Points = 95.5
+Current Points = 95.0
 
 Output (only first 500 characters): 
 
@@ -995,7 +1023,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 10.00550s
+Time consumed = 10.02042s
 
 ======================================================================
 Inspecting script file blackbirds.py...
@@ -1051,7 +1079,7 @@ checking for docstrings...
 
 Found no functions, but one docstring for the script, good
 
-Current Points = 95.5
+Current Points = 95.0
 
 Output (only first 500 characters): 
 
@@ -1065,57 +1093,104 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.14195s
+Time consumed = 0.11922s
 
 ======================================================================
 Inspecting script file Nets.py...
 
 File contents are:
 **********************************************************************
+# !usr/bin/envs python3
 """This script is to visualizes the QMEE CDT collaboration network"""
 
+__author__ = 'Hongye Wang'
+__version__ = '0.0.1'
+
+"""Visualizes the QMEE CDT collaboration network"""
+
 import csv
-import pandas
 import networkx as nx
-import matplotlib.pyplot as p
 import scipy as sc
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
 
-# assign nodes and link from data file
-nodes = pandas.read_csv('../Data/QMEE_Net_Mat_nodes.csv')
-link = pandas.read_csv('../Data/QMEE_Net_Mat_edges.csv')
+# Opens the csv file containing edge & node information.
+link = sc.genfromtxt("../data/QMEE_Net_Mat_edges.csv", delimiter=",")
+node = sc.genfromtxt("../data/QMEE_Net_Mat_nodes.csv",
+                     delimiter=",", dtype=str)
 
-# rename the row name in dataframe
-link = link.rename(index={0:'ICL',1:'UoR',2:'CEH',3:'ZSL',4:'CEFAS',5:'NonAc'})
+# Removes the location names
+links = link[1:, :]
+# Extracts the institution names from the node data.
+nodes = node[1:, 0]
 
-# reset the dataframe to an edge list
-edgels = link.stack().reset_index()
+# Identifies the presence of links between collaborating sites and creates an array of these links
+adjacency = sc.argwhere(links > 1.)
 
-# reset the column name more meaningfully
-edgels = edgels.rename(columns={'level_0':'Source', 'level_1':'Target', 0:'Weight'})
+# Creates a tuple of connections between sites using the adjacency array.
+connect = ()
+for i in adjacency:
+    connect = connect + ((i[0], i[1]),)
 
-# delete the zero weight pair
-edgels = edgels[edgels.Weight != 0]
+# Creates a list of link weights using the links array.
+weights = []
+for i in adjacency:
+    weights.append((links[i[0], i[1]])/10)
 
-# convert to tuple
-edgels = edgels.apply(tuple, axis=1)
 
-# create a circular layout
-pos = nx.circular_layout(nodes["id"])
+# Creates the variable NodSizs
+NodSizs = []
+for i in node[1:, 2]:
+    NodSizs.append(float(i)*77)
 
+# Label nodes
+names = {}
+for i in range(len(nodes)):
+    names[i] = nodes[i]
+
+# Assign colours for node type
+colours = []
+for i in node[1:, 1]:
+    if i == 'University':
+        colours.append('b')
+    if i == 'Hosting Partner':
+        colours.append('g')
+    if i == 'Non-Hosting Partners':
+        colours.append('r')
+
+
+# Drawng the network.
+# Plot graph
+plt.close('all')
 G = nx.Graph()
-G.add_nodes_from(nodes["id"]) # add nodes
 
-for (Source,Target,Weight) in edgels:
-    G.add_weighted_edges_from(edgels,weight=Weight)
+# Creates a position variable causing the nodes to be arranged in a circle.
+pos = nx.circular_layout(range(len(nodes)))
 
-# plot and save
-f = p.figure()
+# Draws the network uing the above objects
+nx.draw_networkx(G, pos,
+                 nodelist=range(len(nodes)),
+                 node_color=colours,
+                 labels=names,
+                 font_size='12',
+                 node_size=NodSizs*100,
+                 edgelist=connect,
+                 width=weights)
 
-nx.draw_networkx(G,pos,node_size = 1000,node_color = ["r","r","g","g","g","b"])
+# Removes the axes
+plt.axis('off')
 
-p.legend(pandas.unique(nodes["Type"]),numpoints = 0.1,loc = 1,prop={'size':12})
-# p.show()
-f.savefig("../result/QMEE_py.svg")**********************************************************************
+# Create items for the legend
+blue = mpatches.Patch(color='blue', label='University')
+green = mpatches.Patch(color='green', label='Hosting Partner')
+red = mpatches.Patch(color='red', label='Non-Hosting Partner')
+
+# Plots a legend to indicate the colour coding
+plt.legend(handles=[blue, green, red],
+           loc=(0, 0.65), fontsize=10, frameon=False)
+
+# Saves the plot.
+plt.savefig('../result/QMEENetpy.svg')**********************************************************************
 
 Testing Nets.py...
 
@@ -1123,9 +1198,10 @@ Nets.py is a Python script file;
 
 checking for docstrings...
 
-Found no functions, but one docstring for the script, good
+No functions, but no script-level docstring either
+2 pts deducted
 
-Current Points = 95.5
+Current Points = 93.0
 
 Output (only first 500 characters): 
 
@@ -1134,12 +1210,38 @@ Output (only first 500 characters):
 **********************************************************************
 
 Encountered error (or warning):
-/usr/lib/python3/dist-packages/networkx/drawing/nx_pylab.py:522: MatplotlibDeprecationWarning: The is_string_like function was deprecated in version 2.1.
-  if not cb.is_string_like(edge_color) \
-/usr/lib/python3/dist-packages/networkx/drawing/nx_pylab.py:543: MatplotlibDeprecationWarning: The is_string_like function was deprecated in version 2.1.
-  if cb.is_string_like(edge_color) or len(edge_color) == 1:
-/usr/lib/python3/dist-packages/networkx/drawing/nx_pylab.py:724: MatplotlibDeprecationWarning: The is_string_like function was deprecated in version 2.1.
-  if not cb.is_string_like(label):
+Traceback (most recent call last):
+  File "Nets.py", line 16, in <module>
+    link = sc.genfromtxt("../data/QMEE_Net_Mat_edges.csv", delimiter=",")
+  File "/usr/local/lib/python3.5/dist-packages/numpy/lib/npyio.py", line 1551, in genfromtxt
+    fhd = iter(np.lib._datasource.open(fname, 'rb'))
+  File "/usr/local/lib/python3.5/dist-packages/numpy/lib/_datasource.py", line 151, in open
+    return ds.open(path, mode)
+  File "/usr/local/lib/python3.5/dist-packages/numpy/lib/_datasource.py", line 501, in open
+    raise IOError("%s not found." % path)
+OSError: ../data/QMEE_Net_Mat_edges.csv not found.
+
+======================================================================
+Inspecting script file TestR.R...
+
+File contents are:
+**********************************************************************
+### for test ###
+print("Hello, this is R!")
+**********************************************************************
+
+Testing TestR.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+[1] "Hello, this is R!"
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.09545s
 
 ======================================================================
 Inspecting script file profileme.py...
@@ -1181,7 +1283,7 @@ Found one or more docstrings and functions
 
 Missing docstring, either in one or functions and/or at the script level
 
-Current Points = 94.0
+Current Points = 91.5
 
 Output (only first 500 characters): 
 
@@ -1192,7 +1294,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 6.48950s
+Time consumed = 6.87528s
 
 ======================================================================
 Inspecting script file LV4.py...
@@ -1288,34 +1390,34 @@ Found one or more docstrings and functions
 
 Missing docstring, either in one or functions and/or at the script level
 
-Current Points = 93.5
+Current Points = 91.0
 
 Output (only first 500 characters): 
 
 **********************************************************************
 the final population values is:
 [[ 10.           5.        ]
- [ 10.34789072   6.25      ]
- [  9.2218773    7.97557377]
- [  7.18241161   9.50401909]
- [  5.27956604   9.87164282]
- [  4.22401416   8.84467068]
- [  4.0517395    7.2243364 ]
- [  4.58033714   5.80750289]
- [  5.69737341   4.89877553]
- [  7.26421541   4.54264928]
- [  8.91196403   4.74623335]
- [  9.96671914   5.54548624]
- [  9.78752023   6.91801591]
- [  8.36197443   8.53727451]
- [  6.42752729   9.62277259]
- [  4.90782684   9.45018381]
+ [ 10.08666991   6.25      ]
+ [  8.86878903   7.85312652]
+ [  6.92559573   9.15014243]
+ [  5.19445681   9.32783526]
+ [  4.26114581   8.29789544]
+ [  4.13669485   6.8008384 ]
+ [  4.6613524    5.51039369]
+ [  5.72967378   4.68163836]
+ [  7.20632847   4.35263872]
+ [  8.75934967   4.52881019]
+ [  9.80078168   5.2396125 ]
+ [  9.75020298   6.47122861]
+ [  8.52411963   7.96779874]
+ [  6.70814356   9.07778459]
+ [  5.15409747   9.10602347]
  [  4
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 0.91789s
+Time consumed = 0.92906s
 
 ======================================================================
 Inspecting script file fmr.R...
@@ -1359,7 +1461,7 @@ Finished in R!
 
 Code ran without errors
 
-Time consumed = 0.18050s
+Time consumed = 0.17713s
 
 ======================================================================
 Inspecting script file using_os.py...
@@ -1369,7 +1471,7 @@ File contents are:
 #!/usr/bin/env python3
 """This is a script to lists if files and direcyories from home directory"""
 
-__author__ = ' Hongye Wang (hw2419@ic.ac.uk) '
+__author__ = 'Hongye Wang'
 
 # Use the subprocess.os module to get a list of files and  directories 
 # in your ubuntu home directory 
@@ -1446,19 +1548,19 @@ checking for docstrings...
 
 Found no functions, but one docstring for the script, good
 
-Current Points = 93.5
+Current Points = 91.0
 
 Output (only first 500 characters): 
 
 **********************************************************************
+files and dirs start with 'C': directory number: 88639 ; file number: 14036 
 
+ ['C', 'CHANGELOG.md', 'CONTRIBUTING.md', 'C', 'C', 'C', 'Caligraphic-Bold.js', 'C', 'CombDiacritMarks.js', 'C', 'C', 'C', 'CombDiacritMarks.js', 'CombDiacritMarks.js', 'CombDiactForSymbols.js', 'CombDiacritMarks.js', 'CombDiacritMarks.js', 'CombDiacritMarks.js', 'CombDiacritMarks.js', 'CombDiacritMarks.js', 'CombDiactForSymbols.js', 'CombDiacritMarks.js', 'CHTML-preview.js', 'C', 'CONTRIBUTING.md', 'CHANGELOG.md', 'COP
 **********************************************************************
 
-Encountered error (or warning):
-  File "using_os.py", line 4
-    __author__ = ' Hongye Wang (hw2419@ic.ac.uk) '
-              ^
-SyntaxError: invalid character in identifier
+Code ran without errors
+
+Time consumed = 6.32489s
 
 ======================================================================
 Inspecting script file LV1.py...
@@ -1466,7 +1568,8 @@ Inspecting script file LV1.py...
 File contents are:
 **********************************************************************
 #!/usr/bin/env python3
-__author__ = ' Hongye Wang (hw2419@ic.ac.uk) '
+__author__ = 'Hongye Wang (hw2419@ic.ac.uk)'
+
 
 import scipy as sc
 import scipy.integrate as integrate
@@ -1511,7 +1614,7 @@ checking for docstrings...
 Found one or more functions, but completely missing docstrings
 2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
 
-Current Points = 91.0
+Current Points = 88.5
 
 Output (only first 500 characters): 
 
@@ -1519,11 +1622,58 @@ Output (only first 500 characters):
 
 **********************************************************************
 
-Encountered error (or warning):
-  File "LV1.py", line 2
-    __author__ = ' Hongye Wang (hw2419@ic.ac.uk) '
-              ^
-SyntaxError: invalid character in identifier
+Code ran without errors
+
+Time consumed = 5.55285s
+
+======================================================================
+Inspecting script file MyFirstJupyterNB.ipynb...
+
+File contents are:
+**********************************************************************
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = \"this is python!\"; print(a)\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "file_extension": ".py",
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  },
+  "mimetype": "text/x-python",
+  "name": "python",
+  "npconvert_exporter": "python",
+  "pygments_lexer": "ipython3",
+  "version": 3
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
+**********************************************************************
+
+Testing MyFirstJupyterNB.ipynb...
 
 ======================================================================
 Inspecting script file DrawFW.py...
@@ -1586,7 +1736,7 @@ checking for docstrings...
 
 Found one or more docstrings and functions
 
-Current Points = 91.0
+Current Points = 88.5
 
 Output (only first 500 characters): 
 
@@ -1594,9 +1744,13 @@ Output (only first 500 characters):
 
 **********************************************************************
 
-Code ran without errors
-
-Time consumed = 10.01292s
+Encountered error (or warning):
+/usr/lib/python3/dist-packages/networkx/drawing/nx_pylab.py:522: MatplotlibDeprecationWarning: The is_string_like function was deprecated in version 2.1.
+  if not cb.is_string_like(edge_color) \
+/usr/lib/python3/dist-packages/networkx/drawing/nx_pylab.py:543: MatplotlibDeprecationWarning: The is_string_like function was deprecated in version 2.1.
+  if cb.is_string_like(edge_color) or len(edge_color) == 1:
+/usr/lib/python3/dist-packages/networkx/drawing/nx_pylab.py:724: MatplotlibDeprecationWarning: The is_string_like function was deprecated in version 2.1.
+  if not cb.is_string_like(label):
 
 ======================================================================
 Inspecting script file re4.py...
@@ -1648,7 +1802,7 @@ checking for docstrings...
 
 Found no functions, but one docstring for the script, good
 
-Current Points = 91.0
+Current Points = 88.5
 
 Output (only first 500 characters): 
 
@@ -1660,7 +1814,7 @@ niceandsimple@example.com
 
 Code ran without errors
 
-Time consumed = 0.08499s
+Time consumed = 0.02988s
 
 ======================================================================
 Inspecting script file Nets.R...
@@ -1759,8 +1913,18 @@ File contents are:
 __author__ = 'Hongye Wang (hw2419@ic.ac.uk)'
 
 import subprocess
-p = subprocess.Popen("Rscript fmr.R", stdout=subprocess.PIPE,stderr=subprocess.PIPE,shell=True)
+
+p = subprocess.Popen("Rscript fmr.R", stdout=subprocess.PIPE,
+                     stderr=subprocess.PIPE, shell=True)
+
 stdout, stderr = p.communicate()
+
+if stderr:
+    print("Error!!\n")
+    print(stderr.decode())
+else:
+    print("Successfully call Rscript fmr.R!!\n")
+
 print(stdout.decode())**********************************************************************
 
 Testing run_fmr_R.py...
@@ -1771,11 +1935,13 @@ checking for docstrings...
 
 Found no functions, but one docstring for the script, good
 
-Current Points = 91.0
+Current Points = 88.5
 
 Output (only first 500 characters): 
 
 **********************************************************************
+Successfully call Rscript fmr.R!!
+
 Reading CSV
 Creating graph
 null device 
@@ -1787,7 +1953,7 @@ Finished in R!
 
 Code ran without errors
 
-Time consumed = 0.19968s
+Time consumed = 0.20287s
 
 ======================================================================
 Inspecting script file run_LV.py...
@@ -1826,7 +1992,7 @@ checking for docstrings...
 
 Found no functions, but one docstring for the script, good
 
-Current Points = 91.0
+Current Points = 88.5
 
 Output (only first 500 characters): 
 
@@ -1851,11 +2017,9 @@ the final population values is:
  [  7.19400361   4.2845181
 **********************************************************************
 
-Encountered error (or warning):
-  File "LV1.py", line 2
-    __author__ = ' Hongye Wang (hw2419@ic.ac.uk) '
-              ^
-SyntaxError: invalid character in identifier
+Code ran without errors
+
+Time consumed = 5.61037s
 
 ======================================================================
 Inspecting script file LV2.py...
@@ -1873,7 +2037,7 @@ import matplotlib.pylab as p
 import sys
 
 def dCR_dt(pops, t=0):
-
+    """define the model"""
     R = pops[0]
     C = pops[1]
     dRdt = r * R * (1 - R/K) - a * R * C 
@@ -1947,9 +2111,7 @@ checking for docstrings...
 
 Found one or more docstrings and functions
 
-Missing docstring, either in one or functions and/or at the script level
-
-Current Points = 90.5
+Current Points = 88.5
 
 Output (only first 500 characters): 
 
@@ -1966,19 +2128,19 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.78552s
+Time consumed = 0.84323s
 
 ======================================================================
 ======================================================================
 Finished running scripts
 
-Ran into 7 errors
+Ran into 5 errors
 
 ======================================================================
 ======================================================================
 
 FINISHED WEEKLY ASSESSMENT
 
-Current Points for the Week = 90.5
+Current Points for the Week = 88.5
 
 NOTE THAT THESE ARE POINTS, NOT MARKS FOR THE WEEK!
