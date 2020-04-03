@@ -27,7 +27,7 @@ To run the whole project, just run the script run_MiniProject.sh on the bash she
 '''
 Miniproject/
 Code:
-     find_start_val.ipynb
+     find_start_val.ipynb : these .ipynb files are my first drafts in the beginning, after 
      model_fitting.ipynb
      model_function.ipynb
      modify_data.ipynb
